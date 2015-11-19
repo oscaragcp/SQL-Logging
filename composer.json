@@ -1,0 +1,17 @@
+{
+    "name": "oscaragcp/sql-logging",
+    "description": "A package which allows to log SQL queries in Laravel",
+    "keywords": ["laravel", "sql", "query", "queries", "logger", "log", "logging", "debug", "debugging"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Óscar A. González de Chaves Pérez",
+            "email": "oscar.agcp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.x|5.1.x",
+        "monolog/monolog": "~1.11"
+    }
+}
