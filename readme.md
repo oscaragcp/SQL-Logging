@@ -13,3 +13,9 @@ Begin by installing this package through Composer.
 	}
 }
 ```
+
+After updating composer, add the service provider to the `providers` array in `config/app.php`
+
+```js
+    'OscarAGCP\SqlLogging\SqlLoggingServiceProvider',
+```
