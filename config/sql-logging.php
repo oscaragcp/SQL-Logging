@@ -10,5 +10,5 @@ return [
       |
      */
 
-    'log' => true,
+    'log' => env('SQL_LOGGIN', true),
 ];
