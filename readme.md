@@ -1,16 +1,22 @@
-# SQL Logging
+# Laravel 5 SQL Logger
 
-Laravel package for loggin SQL queries.
+Laravel 5 package for loggin SQL queries.
 
-## Installation
+## Install
 
-Begin by installing this package through Composer.
+Require this package with composer using the following command:
+
+```bash
+composer require oscaragcp/sql-logging
+```
+
+Or just add oscaragcp/sql-logging to your composer.json file:
 
 ```js
 {
     "require": {
-		"oscaragcp/sql-logging": "dev-master"
-	}
+        "oscaragcp/sql-logging": "dev-master"
+    }
 }
 ```
 
