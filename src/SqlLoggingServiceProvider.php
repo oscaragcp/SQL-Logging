@@ -9,6 +9,7 @@ use Monolog\Logger;
 
 class SqlLoggingServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap the application services.
      *
@@ -16,13 +17,10 @@ class SqlLoggingServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/sql-logging.php';
-        if (function_exists('config_path')) {
-            $publishPath = config_path('sql-logging.php');
-        } else {
-            $publishPath = base_path('config/sql-logging.php');
-        }
-        $this->publishes([$configPath => $publishPath], 'config');
+        // Publish a config file
+        $this->publishes([
+            __DIR__.'/../config/logging.php' => config_path('logging.php')
+            ], 'config');
     }
 
     /**
@@ -58,6 +56,5 @@ class SqlLoggingServiceProvider extends ServiceProvider
                 $log->addInfo($query, $data);
             });
         }
-
     }
 }
