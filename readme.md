@@ -19,3 +19,9 @@ After updating composer, add the service provider to the `providers` array in `c
 ```js
     'OscarAGCP\SqlLogging\SqlLoggingServiceProvider',
 ```
+
+You can also publish the config file to change enable/disable the logging.
+
+```js
+php artisan vendor:publish --provider="OscarAGCP\SqlLogging\SqlLoggingServiceProvider" --tag=config
+```
