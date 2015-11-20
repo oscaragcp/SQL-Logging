@@ -16,9 +16,13 @@ class SqlLoggingServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__ . '/config/sql-logging.php' => config_path('sql-logging.php')
-        ]);
+        $configPath = __DIR__ . '/../config/sql-logging.php';
+        if (function_exists('config_path')) {
+            $publishPath = config_path('sql-logging.php');
+        } else {
+            $publishPath = base_path('config/sql-logging.php');
+        }
+        $this->publishes([$configPath => $publishPath], 'config');
     }
 
     /**
