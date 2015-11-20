@@ -33,6 +33,9 @@ class SqlLoggingServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $configPath = __DIR__ . '/../config/sql-logging.php';
+        $this->mergeConfigFrom($configPath, 'sql-logging');
+
         if (config('sql-logging.log', false)) {
             Event::listen('illuminate.query',
                 function($query, $bindings, $time) {
