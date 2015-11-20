@@ -1,6 +1,6 @@
 # SQL Logging
 
-A package which allows to log SQL queries in Laravel
+A package that allows to log SQL queries in Laravel.
 
 ## Installation
 
