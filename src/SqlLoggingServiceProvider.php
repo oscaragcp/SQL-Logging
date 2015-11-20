@@ -19,7 +19,7 @@ class SqlLoggingServiceProvider extends ServiceProvider
     {
         // Publish a config file
         $this->publishes([
-            __DIR__.'/../config/logging.php' => config_path('logging.php')
+            __DIR__.'/../config/sql-logging.php' => config_path('sql-logging.php')
             ], 'config');
     }
 
