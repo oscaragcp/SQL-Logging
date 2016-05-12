@@ -1,6 +1,6 @@
 {
     "name": "oscaragcp/sql-logging",
-    "description": "Laravel 5 package for loggin SQL queries.",
+    "description": "Laravel 5 package for logging SQL queries.",
     "keywords": ["laravel", "sql", "query", "queries", "logger", "log", "logging", "debug", "debugging"],
     "license": "MIT",
     "authors": [
