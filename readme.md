@@ -1,7 +1,7 @@
 # Laravel 5 SQL Logger
 [![Latest Stable Version](https://poser.pugx.org/oscaragcp/SQL-Logging/version.png)](https://packagist.org/packages/oscaragcp/SQL-Logging) [![Total Downloads](https://poser.pugx.org/oscaragcp/SQL-Logging/d/total.png)](https://packagist.org/packages/oscaragcp/SQL-Logging)
 
-Laravel 5 package for loggin SQL queries.
+Laravel 5 package for logging SQL queries.
 
 ## Install
 
